@@ -1,6 +1,5 @@
 package com.engeto.Hotel2;
 
-import com.engeto.Computer;
 
 import java.util.ArrayList;
 import java.util.List;

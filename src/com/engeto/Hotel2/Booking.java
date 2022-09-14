@@ -1,5 +1,7 @@
 package com.engeto.Hotel2;
 
+import com.engeto.Computer;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -63,18 +65,15 @@ public class Booking {
     public void addGuest(Guest addingGuest){
         anotherGuest.add(addingGuest);
     }
-    public void summaryOfBooking() { }
-
-// public String summaryOfBooking() {
-//        return "Booking{" +
-//                "addingGuest=" + addingGuest +
-//                ", room=" + room +
-//                ", startDate=" + startDate +
-//                ", endDate=" + endDate +
-//                ", commType=" + commType +
-//                '}';
-//    }
-
+    public String summaryOfBooking() {
+        return "Booking{" +
+                "addingGuest=" + addingGuest +
+                ", room=" + room +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", commType=" + commType +
+                '}';
+    }
 }
 //        V rámci jedné rezervace (booking) vždy přiřazujeme pokoj jednomu nebo více hostům
 //        na časové období mezi dvěma daty (například pokoj číslo 3 na období od 15. 7. do 24. 7. 2021).
