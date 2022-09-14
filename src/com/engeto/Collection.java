@@ -16,14 +16,13 @@ public class Collection {
     // Lze také zkráceně:
     List<Double> numbers2 = Arrays.asList(10.0, 12.5, 7.5, 27.3);
     //Přidej do seznamu všechny násobky čísla 3 z rozsahu 20 až 50.
-        for(Double i = 21.0; i <= 50.0; i += 3.0){
+        for(double i = 21.0; i <= 50.0; i += 3.0){
             numbers1.add(i);
         }
 //    Přidej do seznamu dalších 10 náhodných čísel z rozsahu 100 až 200.
 //    Pro generování náhodných čísel můžeš použít metodu Math.random(), která vrací číslo z rozsahu <0, 1). Její výsledek můžeš posléze vynásobit délkou rozsahu a přičíst základ.
 //    Pro náhodná čísla z rozsahu 100 až 180 tedy například použij:
-//    ZKOPÍROVAT KÓD
-//    Double random = Math.floor(100+Math.random()*((180+1)-100));
+//       Double random = Math.floor(100+Math.random()*((180+1)-100));
 //    Přidání náhodných čísel :
         Double random;
         for (int i = 0; i < 10; i++) {
