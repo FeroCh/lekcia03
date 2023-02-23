@@ -62,7 +62,6 @@ public class Plant {
             if (watering.isAfter(planted)) { this.watering = watering;
             }
         }catch (DateTimeException e){throw new PlantException("Datum zalievky nesmie byt starsi ako datum vysadby" + planted);}
-
     }
 
     public int getFrequencyOfWatering() {
@@ -77,21 +76,18 @@ public class Plant {
         }
     }
 
-    public String getWateringInfo(){
-        return ("Meno rastliny: "+name
-                +"Datum poslednej zalievky: "+watering
-                +"Datum poslednej zalievky"+getWatering().plusDays(7));
+    public LocalDate getWateringInfo(){
+        return getWatering().plusDays(7);
     }
 
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Plant{" +
+                "name='" + name + '\'' +
+                ", notes='" + notes + '\'' +
+                ", planted=" + planted +
+                ", watering=" + watering +
+                ", frequencyOfWatering=" + frequencyOfWatering +
+                '}';
+    }
 }
